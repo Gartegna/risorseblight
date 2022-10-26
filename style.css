@@ -1,0 +1,97 @@
+body,
+html { 
+  background: url(BackgroundIndex.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.container-2{
+  background-color: red;
+}
+
+.container-footer{
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.row{
+  margin: 20px;
+
+}
+
+.col{
+
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: fit-content;
+  border-left: solid 8px yellow;
+  border-radius: 6px;
+}
+
+
+h1, h2, h3 {
+  /*per i colori in css guardare formattazione su weschool*/
+  color: #0dcaf0;
+
+}
+
+h4, h5{
+  color: deepskyblue;
+  text-align: center;
+
+}
+
+h1:hover, h2:hover {
+  transform: scale(1.03);
+  transition: transform 1s ease-in-out;
+}
+
+
+footer{
+position: fixed;  /*non è influenzato da altro*/ 
+bottom: 0;        /*funziona solo se position fixed*/
+display: flex;    /*distribuzione orizzontale*/
+justify-content: space-around;
+flex-items: margin-left;
+width: 100%;      /*per far rispettare le precedenti*/
+ 
+}
+
+.menu, .back{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu:link, .back:link{
+color: #0dcaf0;
+}
+
+.menu:visited{
+  color: greenyellow;
+}
+
+.back:visited{
+  color: #0dcaf0;
+}
+
+.menu:active{
+  color: #0dcaf0;
+}
+
+.menu:hover{
+
+}
+
+.col-1{
+  display: none;
+
+}
+
+.col:hover + .col-1{
+  display: block;
+}
